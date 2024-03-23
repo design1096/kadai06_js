@@ -9,7 +9,7 @@
 - ３、写真の一覧をギャラリー表示する
 
 ## ③DEMO
-
+https://design1096.github.io/kadai06_js/
 
 ## ④工夫した点・こだわった点
 - FirebaseのAuthentication機能を使用した点

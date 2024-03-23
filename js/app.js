@@ -166,8 +166,8 @@ function DownLoadImage(arg) {
       xhr.send();
 
       // <img>要素の追加
-      let h = '<img src="' + url + '" class="gallery_image">';
-      $("#gallery").append(h);
+      let image_txt = '<img src="' + url + '" class="gallery_image">';
+      $("#gallery").append(image_txt);
    })
    .catch((error) => {
       alert(DOWNLOAD_ERROR_MESSAGE);

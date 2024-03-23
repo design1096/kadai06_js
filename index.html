@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- タイトル -->
+    <title>Photo Gallery</title>
+</head>
+<body class="body_login_color">
+  <h1>Photo Gallery</h1>
+  <div class="login-page">
+    <!-- 登録・ログイン -->
+    <div class="form" id="login_register_area">
+      <!-- 登録フォーム -->
+      <form class="register-form">
+        <p>アカウント登録</p>
+        <input type="email" placeholder="Eメール" id="register_email_txt"/>
+        <input type="password" placeholder="パスワード" id="register_pass_txt"/>
+        <button type="submit" id="register_btn" class="login_btn_color">登録</button>
+        <p class="message">すでに登録されている場合 <a href="#" class="login_message_color">ログインする</a></p>
+      </form>
+      <!-- ログインフォーム -->
+      <form class="login-form">
+        <p>ログイン</p>
+        <input type="email" placeholder="Eメール" id="login_email_txt"/>
+        <input type="password" placeholder="パスワード" id="login_pass_txt"/>
+        <button type="submit" id="login_btn" class="login_btn_color">ログイン</button>
+        <p class="message">まだ登録されていない場合 <a href="#" class="login_message_color">アカウント登録</a></p>
+      </form>
+    </div>
+    <!-- ログアウト・画像登録 -->
+    <div class="form2" id="image_input_area">
+      <form class="image_input_form">
+        <p>ようこそ！<span id="output_email"></span> さん</p>
+        <button type="submit" id="logout_btn" class="logout_btn_color margin_b_45">ログアウト</button>
+        <p>写真をアップロード</p>
+        <input type="file" multiple='multiple' name='imgs[]' id="input_file" />
+        <button type="submit" id="image_upload_btn" class="margin_b_45">アップロード</button>
+        <p>ギャラリーを表示</p>
+        <button type="submit" id="image_download_btn">表示する</button>
+      </form>
+    </div>
+  </div>
+  <!-- 画像ギャラリー -->
+  <div id="gallery" class="gallery_area"></div>
+    <!-- スクリプト -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- 自作JS -->
+    <script src="js/style.js" charset="utf-8"></script>
+    <script type="module" src="js/app.js" charset="utf-8"></script>
+</body>
+</html>
